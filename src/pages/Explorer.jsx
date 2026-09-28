@@ -39,15 +39,22 @@ export default function Explorer({ onNavigate }) {
       >
         <div className="flex flex-col md:flex-row gap-6 items-center">
           
-          {/* ESPAÇO RESERVADO PARA O VÍDEO EM LIBRAS */}
-          <div className="w-full md:w-1/2 aspect-video bg-slate-900 border-2 border-dashed border-slate-500 rounded-xl flex items-center justify-center text-slate-500 font-bold">
-            🎥 Área do Vídeo em Libras
+          {/* IMAGEM DA PEÇA EM DESTAQUE */}
+          <div className="w-full md:w-1/3 flex justify-center">
+             <img 
+                src={selectedPiece?.imagePath} 
+                alt={selectedPiece?.name} 
+                className="w-40 h-40 object-contain drop-shadow-[0_10px_10px_rgba(0,0,0,0.5)]" 
+              />
           </div>
 
           {/* EXPLICAÇÃO EM PORTUGUÊS */}
           <div className="w-full md:w-1/2">
             <p className="text-xl text-slate-200 leading-relaxed">
               {selectedPiece?.description}
+            </p>
+            <p className="text-slate-400 mt-6 text-sm italic">
+              * Selecione o texto acima ou clique no botão azul do VLibras na lateral da tela para ver a tradução.
             </p>
           </div>
         </div>
