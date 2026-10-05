@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/pc-visual-libras/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hardware em Sinais</title>
+    <script type="module" crossorigin src="/pc-visual-libras/assets/index-DGx_5z2f.js"></script>
+    <link rel="stylesheet" crossorigin href="/pc-visual-libras/assets/index-B30dvMxP.css">
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    
+    <!-- Script Oficial do Governo -->
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      // O script inicializa o Widget automaticamente.
+      // Estamos passando o objeto de configuração para garantir que ele fique do lado direito ('R')[cite: 1].
+      new window.VLibras.Widget({
+          rootPath: 'https://vlibras.gov.br/app',
+          avatar: 'icaro', // Você pode mudar para 'hosana', 'guga' ou 'random'[cite: 1]
+          position: 'R'    // 'R' (Right/Direita) ou 'L' (Left/Esquerda)[cite: 1]
+      });
+    </script>
+    
+  </body>
+</html>
